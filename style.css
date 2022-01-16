@@ -15,7 +15,7 @@ body{
 
 section{
     background: hsl(185, 75%, 39%);
-    height: 100hv;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,17 +35,68 @@ section{
     height: 150px;
 }
 
+.card-body{
+    padding: 0 20px 25px;
+}
+
 .img-holder {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border: 5px solid white;
     overflow: hidden;
-    margin: -50px auto 30px auto;
+    margin: -55px auto 30px auto;
 }
 
 .img-holder img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.age,
+.city,
+.meta{
+    font-weight: 400;
+    color: hsl(0, 11%, 12%);
+    opacity: .6;
+}
+
+.name-age{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.age{
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.city{
+    font-size: .9rem;
+}
+
+.card-footer{
+    border-top: 1px solid hsl(0, 3%, 86%);
+    display: flex;
+    padding: 0 25px;
+}
+
+.card-footer .item{
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .item .value{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.card-footer .item .meta{
+    font-size:  .6rem;
+    letter-spacing: 1px;
 }
